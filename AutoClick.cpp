@@ -9,13 +9,13 @@ int ms;
 
 int main()
 {
-	std::cout<<"\033[2J\033[H";
+	std::cout<<"\033[2J\033[H"; //clear the terminal
 	Display* display = XOpenDisplay(NULL);
-	std::cout<<"Digite quanto tempo de pausa do autoclick(em milisegundos): ";
+	std::cout<<"Enter the autoclick pause time (in milliseconds): ";
 	std::cin>>ms;
 	int micro = ms * 1000;
 	
-	std::cout<<"AutoClicker rodando, use CTRL + C para parar\n";
+	std::cout<<"AutoClicker is running, use CTRL + C to stop it.\n";
 	
 	while (true)
 	{
